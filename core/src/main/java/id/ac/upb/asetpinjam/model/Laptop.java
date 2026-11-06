@@ -1,8 +1,8 @@
+package id.ac.upb.asetpinjam.model;
 
 /** Minggu 3: aset berupa laptop. Spesifikasi dan nomor inventaris tidak boleh kosong. */
 public class Laptop extends Aset {
 
-    // Field khusus laptop.
     private String spesifikasi;
     private String nomorInventaris;
 
@@ -34,9 +34,13 @@ public class Laptop extends Aset {
     }
 
     @Override
-    public String getJenis() {
-        return "LAPTOP";
+    public JenisAset getJenis() {
+        return JenisAset.LAPTOP;
     }
 
-    
+    // Minggu 4: menghitung denda laptop dengan pengali 2
+    @Override
+    public long hitungDenda(int hariTerlambat) {
+        return hitungDendaDenganPengali(hariTerlambat, 2);
+    }
 }

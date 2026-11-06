@@ -1,10 +1,8 @@
 package id.ac.upb.asetpinjam.model;
 
-
 /** Minggu 3: alat laboratorium. Laboratorium tidak boleh kosong; risiko tidak boleh null. */
 public class AlatLab extends Aset {
 
-    // Field khusus alat laboratorium.
     private String laboratorium;
     private TingkatRisiko tingkatRisiko;
 
@@ -36,8 +34,13 @@ public class AlatLab extends Aset {
     }
 
     @Override
-    public String getJenis() {
-        return "ALAT_LAB";
+    public JenisAset getJenis() {
+        return JenisAset.ALAT_LAB;
     }
 
+    // Minggu 4: menghitung denda alat laboratorium dengan pengali 4
+    @Override
+    public long hitungDenda(int hariTerlambat) {
+        return hitungDendaDenganPengali(hariTerlambat, 4);
+    }
 }
