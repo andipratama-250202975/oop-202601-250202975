@@ -1,9 +1,10 @@
+
 package id.ac.upb.asetpinjam.model;
 
 import id.ac.upb.asetpinjam.config.Varian;
 import id.ac.upb.asetpinjam.kontrak.DapatDipinjam;
 
-public class Aset implements DapatDipinjam {
+public abstract class Aset implements DapatDipinjam {
 
     private String kode;
     private String nama;
@@ -62,10 +63,11 @@ public class Aset implements DapatDipinjam {
         this.kondisi = kondisi;
     }
 
-    // TODO minggu 5
+    // Implementasi interface DapatDipinjam
     @Override
     public boolean bisaDipinjam() {
-        throw new UnsupportedOperationException("TODO minggu 5");
+        return status == StatusAset.TERSEDIA
+                && kondisi != Kondisi.RUSAK_BERAT;
     }
 
     // TODO minggu 3
@@ -73,20 +75,19 @@ public class Aset implements DapatDipinjam {
         throw new UnsupportedOperationException("TODO minggu 3");
     }
 
-    // TODO minggu 4
-public long hitungDenda(int hariTerlambat) {
-    return hitungDendaDenganPengali(hariTerlambat, 1);
-}
+    // Method abstract untuk perhitungan denda
+    public abstract long hitungDenda(int hariTerlambat);
 
-protected long hitungDendaDenganPengali(int hariTerlambat, int pengali) {
-    if (hariTerlambat < 0) {
-        throw new IllegalArgumentException("Hari terlambat tidak boleh negatif");
+    protected long hitungDendaDenganPengali(int hariTerlambat, int pengali) {
+        if (hariTerlambat < 0) {
+            throw new IllegalArgumentException("Hari terlambat tidak boleh negatif");
+        }
+
+        if (hariTerlambat == 0) {
+            return 0;
+        }
+
+        return (long) hariTerlambat * pengali
+                * Varian.aktif().dendaPerHari;
     }
-
-    if (hariTerlambat == 0) {
-        return 0;
-    }
-
-    return (long) hariTerlambat * pengali * Varian.aktif().dendaPerHari;
-}
 }

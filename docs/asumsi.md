@@ -27,4 +27,12 @@ Salin setiap pertanyaan ambigu (nomor 1 sampai 7) ke sini dan jawab. Contoh:
 
 ## Asumsi lain
 
-Tambahkan di sini keputusan lain yang Anda ambil: rumus denda progresif, perubahan skema database, format error API, dan seterusnya.
+## A-08: Rumus denda progresif
+
+- Pertanyaan: Bagaimana cara menghitung denda progresif?
+- Keputusan: Menggunakan rumus Denda Flat × (1 + 0,05 × jumlah hari keterlambatan).
+- Alasan: Agar denda semakin besar ketika jumlah hari keterlambatan bertambah.
+- Dampak ke kode: Kelas DendaProgresif, method hitung().
+- Tes yang membuktikan: Minggu05AbstraksiTest.dendaProgresifMemenuhiSyaratMinimal().
+
+
