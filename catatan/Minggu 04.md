@@ -22,7 +22,9 @@ Kendala yang saya temui adalah memahami perbedaan penerapan overriding dan overl
 - **Yang saya ubah atau tolak dari saran AI, dan alasannya:** Saya menyesuaikan kode dengan struktur project dan tipe data yang sudah digunakan. Saya juga menambahkan penggunaan `Locale.ROOT` pada pencarian nama agar hasil pencarian lebih konsisten.
 - **Satu hal yang saya pahami lebih baik sekarang:** Saya lebih memahami bahwa overriding digunakan ketika subclass memiliki implementasi method sendiri dari class induk, sedangkan overloading menggunakan nama method yang sama tetapi dengan parameter yang berbeda.
 
-## HASIL
+### HASIL
+
+```
 [INFO] Scanning for projects...
 [INFO] Loaded 24384 auto-discovered prefixes for remote repository central (prefixes-central.txt)
 [INFO] --------------------------------------------------------------------------------------------------------------------------
@@ -120,3 +122,4 @@ Kendala yang saya temui adalah memahami perbedaan penerapan overriding dan overl
 [INFO] Total time:  2.832 s
 [INFO] Finished at: 2026-11-06T12:51:14+07:00
 [INFO] --------------------------------------------------------------------------------------------------------------------------
+```
