@@ -23,7 +23,6 @@ Kendala yang saya temui adalah memahami perbedaan penerapan overriding dan overl
 - **Satu hal yang saya pahami lebih baik sekarang:** Saya lebih memahami bahwa overriding digunakan ketika subclass memiliki implementasi method sendiri dari class induk, sedangkan overloading menggunakan nama method yang sama tetapi dengan parameter yang berbeda.
 
 ## HASIL
-Menjalankan tes minggu 1 sampai 1  (groups: week1)
 [INFO] Scanning for projects...
 [INFO] Loaded 24384 auto-discovered prefixes for remote repository central (prefixes-central.txt)
 [INFO] --------------------------------------------------------------------------------------------------------------------------
@@ -64,11 +63,17 @@ Menjalankan tes minggu 1 sampai 1  (groups: week1)
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running id.ac.upb.asetpinjam.Minggu01Test
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in id.ac.upb.asetpinjam.Minggu01Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s -- in id.ac.upb.asetpinjam.Minggu01Test
+[INFO] Running id.ac.upb.asetpinjam.Minggu02AsetTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in id.ac.upb.asetpinjam.Minggu02AsetTest
+[INFO] Running id.ac.upb.asetpinjam.Minggu03HierarkiTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in id.ac.upb.asetpinjam.Minggu03HierarkiTest
+[INFO] Running id.ac.upb.asetpinjam.Minggu04PolimorfismeTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in id.ac.upb.asetpinjam.Minggu04PolimorfismeTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] 
 [INFO] -----------------------------------------------< id.ac.upb:asetpinjam-api >-----------------------------------------------
@@ -107,11 +112,11 @@ Menjalankan tes minggu 1 sampai 1  (groups: week1)
 [INFO] Reactor Summary for Aset-Pinjam (OOP 202601) 0.1.0:
 [INFO] 
 [INFO] Aset-Pinjam (OOP 202601) ............................................................................. SUCCESS [  0.010 s]
-[INFO] Aset-Pinjam Core (minggu 1-11) ....................................................................... SUCCESS [  1.648 s]
-[INFO] Aset-Pinjam API (minggu 12-15) ....................................................................... SUCCESS [  0.550 s]
+[INFO] Aset-Pinjam Core (minggu 1-11) ....................................................................... SUCCESS [  1.785 s]
+[INFO] Aset-Pinjam API (minggu 12-15) ....................................................................... SUCCESS [  0.572 s]
 [INFO] --------------------------------------------------------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] --------------------------------------------------------------------------------------------------------------------------
-[INFO] Total time:  2.663 s
-[INFO] Finished at: 2026-11-06T11:47:19+07:00
+[INFO] Total time:  2.832 s
+[INFO] Finished at: 2026-11-06T12:51:14+07:00
 [INFO] --------------------------------------------------------------------------------------------------------------------------

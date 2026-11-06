@@ -1,4 +1,5 @@
 
+
 package id.ac.upb.asetpinjam.katalog;
 
 import id.ac.upb.asetpinjam.model.Aset;
@@ -30,7 +31,8 @@ public class KatalogAset {
 
         for (Aset aset : daftar) {
             if (aset.getNama().toLowerCase(Locale.ROOT)
-        .contains(kata.toLowerCase(Locale.ROOT))) {
+                    .contains(kata.toLowerCase(Locale.ROOT))) {
+                hasil.add(aset);
             }
         }
 
@@ -54,3 +56,4 @@ public class KatalogAset {
         return hasil;
     }
 }
+
